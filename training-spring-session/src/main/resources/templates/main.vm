@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>后台管理</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="This is my page">
+    #parse("common/include_all.vm")
+    <script type="text/javascript" src="js/main/main.js" ></script>
+</head>
+<body class="easyui-layout">
+##<div data-options="region:'north'" style="height:80px;padding:10px">
+##</div>
+<div data-options="region:'center',iconCls:'icon-ok'" >
+    <div class="easyui-tabs" fit="true" border="false" id="tabs">
+        <div title="首页">
+        </div>
+    </div>
+</div>
+<div data-options="region:'west'" style="width:15%;height:100%;" border="false" >
+    <div class="easyui-accordion" style="width:100%;height:100%;" border="false" >
+        <div title="菜单" data-options="iconCls:'icon-ok'" style="overflow:auto;padding:10px;">
+            <ul id="tree"></ul>
+        </div>
+    </div>
+</div>
+<div id="tabsMenu" class="easyui-menu" style="width:120px;" >
+    <div name="close">关闭</div>
+    <div name="Other">关闭其他</div>
+    <div name="All">关闭所有</div>
+</div>
+</body>
+</html>
